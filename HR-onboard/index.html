@@ -627,7 +627,7 @@
                 const controller = new AbortController();
                 const timeoutId = setTimeout(() => controller.abort(), 5000);
 
-                const response = await fetch('http://3.88.203.125:3200/api/employees', {
+                const response = await fetch('http://3.85.61.23:3200/api/employees', {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' },
                     signal: controller.signal
@@ -692,7 +692,7 @@
                 const controller = new AbortController();
                 const timeoutId = setTimeout(() => controller.abort(), 5000);
 
-                const response = await fetch(`http://3.88.203.125:3200/api/employees/${employeeId}`, {
+                const response = await fetch(`http://3.85.61.23:3200/api/employees/${employeeId}`, {
                     method: 'GET',
                     headers: { 'Content-Type': 'application/json' },
                     signal: controller.signal

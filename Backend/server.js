@@ -351,5 +351,5 @@ app.delete('/api/employees', async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running on http://3.88.203.125:${port}`);
+    console.log(`Server running on http://3.85.61.23:${port}`);
 });
