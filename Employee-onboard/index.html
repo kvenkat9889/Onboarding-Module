@@ -2071,7 +2071,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Submitting FormData with workHistory:', JSON.stringify(employeeData.workHistory, null, 2));
 
             // Submit to backend
-            const response = await fetch('http://localhost:3000/api/employees', {
+            const response = await fetch('http://3.88.203.125:3200/api/employees', {
                 method: 'POST',
                 body: formData,
             });

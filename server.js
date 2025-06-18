@@ -5,7 +5,7 @@ const multer = require('multer');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3200;
 
 // Middleware
 app.use(cors());
@@ -15,9 +15,9 @@ app.use(express.urlencoded({ extended: true, limit: '15mb' }));
 // PostgreSQL connection
 const pool = new Pool({
     user: 'postgres',
-    host: 'localhost',
+    host: 'postgres',
     database: 'employee_onboardings',
-    password: 'root',
+    password: 'admin123',
     port: 5432,
 });
 
@@ -351,5 +351,5 @@ app.delete('/api/employees', async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    console.log(`Server running on http://3.88.203.125:${port}`);
 });
